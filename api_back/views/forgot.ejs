@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Changement de mot de passe</title>
+   <link rel="stylesheet" href="/css/style.css" type="text/css" />
+</head>
+<body>
+    
+<div class="forgot">
+    <img src="/images/logo1.png" alt="logo"/>
+    <h2>Tapez votre nouveau mot de passe 2 fois</h2>
+    <% if(error !== null ) { %>
+        <p className="error"><%=error%></p>
+    <% } %>
+  
+   <form action="/api/v1/user/changePassword/<%=key_id%>" method="POST">
+        <input type="password" name="password1" placeholder="mot de passe"/>
+        <input type="password" name="password2"  placeholder="retapez le mot de passe"/>
+        <input type="submit" value="envoyer" />
+    </form> 
+    <a href="https://teamsneakers.luciepecot.fr/" >Retour à la page d'accueil</a>
+</div>
+
+</body>
+</html>

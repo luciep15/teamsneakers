@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body{
+	text-align: center;
+	font-size: 1.5em;
+}
+.forgot{
+	text-align:center;
+}
+.forgot h2{
+	font-size:2em;
+	margin-top:2%;
+}
+.forgot p{
+	color:#00ddff;
+	font-size:1.5em;
+}
+.forgot a {
+	color:red;
+	font-size:1.2em;
+}
+form {
+	display:flex;
+	flex-direction:column;
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	border: 3px solid #9b9b9b;
+	padding: 25px 50px;
+	border-radius: 20px;
+	margin-bottom:2%;
+}
+form input{
+	width:70%;
+	margin:0 auto;
+	margin-bottom:2%;
+	padding:1.5%;
+	border:1.5px solid black;
+	border-radius:8px;
+}
